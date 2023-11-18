@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Parcial2AcuñaLuzzi.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="estilo.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="navBar" class="nav">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registro.aspx" ForeColor="Blue">Registro</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Grilla.aspx" ForeColor="Blue">Grilla</asp:HyperLink>
+                <br />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <asp:Label ID="Label1" runat="server" Text="Session no cargado"></asp:Label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
